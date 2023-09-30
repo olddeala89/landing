@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: 'Hind', sans-serif;
+    color: #FFFFFF;
+    background: #000000;
+}
+
+.header {
+    display: flex;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-top: 64px;
+    margin-left: 4%;
+}
+
+.menu {
+    color: #FFF;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 81px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav {
+    color: #FFF;
+    text-decoration: none;
+    transition: 200ms;
+}
+
+.nav:hover {
+    color: #06F;
+    text-shadow: 1px 8px 17px 6px rgba(0, 102, 255, 0.35);
+    transition: 200ms;
+}
+
+.button {
+    display: block;
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    width: 99px;
+    height: 54px;
+    padding: 13px 60px;
+    margin-top: 64px;
+    margin-right: 4%;
+    background: #343232;
+    transition: 200ms;
+}
+
+.button:hover {
+    color: #06F;
+    background: #272626;
+    box-shadow: 0px 5px 21px 9px #1b1b1b;
+    transition: 200ms;
+}
+
+.bigheader {
+    display: block;
+    max-width: 823px;
+    font-size: 138px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 125px;
+    background: linear-gradient(90deg, #3F0 0.04%, #06F 43.24%, #6100FF 69.78%, #FF6B00 80.18%, #FF6B00 86.44%, #FF2424 99.97%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subheader {
+    display: block;
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 534px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-top: 56px;
+}
+
+.email {
+    width: 407px;
+    height: 70px;
+    border-radius: 7px;
+    background: #343232;
+    border: none;
+    outline: none;
+    transition: 200ms;
+}
+
+.email::placeholder {
+    color: #898989;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.email:focus {
+    border: none;
+    outline: solid 1px #06F;
+    transition: 200ms;
+}
+
+.email::content {
+    color: #898989;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.submit {
+    display: block;
+    width: 151px;
+    height: 48px;
+    padding: 6px 28px;
+    border-radius: 10px;
+    background: #FFF;
+    color: #000;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.submit:hover {
+    box-shadow: 0px 5px 10px 2px rgba(92, 92, 92, 0.411) inset;
+    background: #06F;
+    color: #FFF;
+    transition: 200ms;
+}
+
+.notify {
+    display: block;
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 364px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 43px;
+}
+
+.copyright {
+    color: #FFF;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 4%;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 24px;
+}
+
+/*Adaptive*/
+
+@media screen and (max-width: 916px) {
+    .logo {
+        width: 60px;
+        height: 60px;
+        margin-top: 79px;
+    }
+
+    .menu {
+        font-size: 26px;
+        margin-top: 88px;
+    }
+
+    .button {
+        font-size: 28px;
+        width: 90px;
+        height: 44px;
+        padding: 6px 42px;
+        margin-top: 77px;
+    }
+
+    .bigheader {
+        max-width: 584px;
+        font-size: 98px;
+    }
+}
+
+@media screen and (max-width: 654px) {
+    .header {
+        display: inline;
+    }
+
+    .logo {
+        display: block;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu {
+        display: block;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 330px;
+    }
+
+    .button {
+        display: block;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bigheader {
+        max-width: 377px;
+        font-size: 63px;
+    }
+
+    .subheader {
+        font-size: 17px;
+        max-width: 361px;
+    }
+
+    .form {
+        display: inline;
+    }
+
+    .email {
+        display: block;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .submit {
+        display: block;
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    .copyright {
+        font-size: 21px;
+        text-align: center;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .bigheader {
+        max-width: 292px;
+        font-size: 48px;
+    }
+
+    .subheader {
+        max-width: 268px;
+    }
+
+    .email {
+        width: 320px;
+        height: 60px;
+    }
+
+    .submit {
+        width: 119px;
+        height: 44px;
+        font-size: 28px; 
+    }
+
+    .notify {
+        max-width: 230px;
+    }
+
+    .copyright {
+        display: block;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
